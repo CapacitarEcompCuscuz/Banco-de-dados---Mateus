@@ -32,7 +32,7 @@ if ($modo == 'inserir') {
 		header('Location: index.html');
 	}
 	else{
-		echo "<script>alert('Erooou');</script>";
+		echo "<script>alert('Login ou senha incorretos');</script>";
 	}
 }
 
@@ -41,7 +41,7 @@ if ($modo == 'inserir') {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cadastro</title>
+	<title>Login</title>
 
 </head>
 <script
@@ -67,6 +67,12 @@ crossorigin="anonymous"></script>
 			<input type="submit" value="Login">
 			<input type="hidden" name="modo" id="modo" value="inserir">
 		</form>
+	</div>
+
+	<div class="Footpage">
+		R. Benfica, 455 - Madalena, Recife - PE, 50720-001
+		<br>
+		Telefone: (81) 3184-7500
 	</div>
 
 	<script src="jquery-3.3.1.min.js"></script>
@@ -97,5 +103,14 @@ crossorigin="anonymous"></script>
 	text-align: center;
 	margin-bottom: 5%;
 	margin-top: 3%;
+}
+.Footpage{
+	margin-top: 11%;
+	font-size: 17px;
+	color: black;
+	width: 100%;
+	height: 100%;	
+	background-color: lightgray;
+	text-align: center;
 }
 </style>
